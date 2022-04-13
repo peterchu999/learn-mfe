@@ -9,6 +9,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js",
+    publicPath: "/container/latest/", // to add path, else html will load the file name
   },
   plugins: [
     new ModuleFederationPlugin({
