@@ -7,6 +7,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js", // we need hash for cache
+    publichPath: "/marketing/latest/",
   },
   plugins: [
     new ModuleFederationPlugin({
